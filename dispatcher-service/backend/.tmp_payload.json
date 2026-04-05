@@ -1,0 +1,84 @@
+﻿{
+    "locomotive":  {
+                       "id":  "train-01",
+                       "model":  "KZ8A",
+                       "status":  "online",
+                       "timestamp":  "2026-04-05T05:06:09.120981Z",
+                       "fault_state":  null
+                   },
+    "metrics":  {
+                    "speed_kmh":  19.1,
+                    "health":  {
+                                   "index":  62,
+                                   "level":  "warning",
+                                   "description":  "attention required",
+                                   "top_factors":  [
+                                                       {
+                                                           "name":  "engine_2_temperature",
+                                                           "impact":  -21
+                                                       },
+                                                       {
+                                                           "name":  "brake_pressure",
+                                                           "impact":  -9
+                                                       },
+                                                       {
+                                                           "name":  "alerts",
+                                                           "impact":  -8
+                                                       },
+                                                       {
+                                                           "name":  "load",
+                                                           "impact":  2
+                                                       }
+                                                   ]
+                               }
+                },
+    "energy":  {
+                   "traction":  {
+                                    "voltage_v":  27146,
+                                    "current_a":  628
+                                },
+                   "consumption":  {
+                                       "used_kwh":  4100.2,
+                                       "recuperated_kwh":  1139.3
+                                   }
+               },
+    "technical":  {
+                      "temperature_c":  {
+                                            "engine_1":  59.7,
+                                            "engine_2":  109.9,
+                                            "inverter":  48.3
+                                        },
+                      "pressure_kpa":  {
+                                           "brake_system":  220.0,
+                                           "main_line":  698.1
+                                       },
+                      "electrical":  {
+                                         "pantograph_up":  true,
+                                         "main_switch_on":  true,
+                                         "frequency_hz":  51.0
+                                     }
+                  },
+    "alerts":  {
+                   "count":  2,
+                   "items":  [
+                                 {
+                                     "type":  "warning",
+                                     "code":  "ENGINE_TEMP_HIGH_2",
+                                     "message":  "Engine 2 temperature is high"
+                                 },
+                                 {
+                                     "type":  "warning",
+                                     "code":  "LOW_BRAKE_PRESSURE",
+                                     "message":  "Brake pressure is below normal"
+                                 }
+                             ]
+               },
+    "navigation":  {
+                       "section_km":  143.468
+                   },
+    "system":  {
+                   "latency_ms":  117,
+                   "ws_connected":  true,
+                   "version":  "1.0.0"
+               }
+}

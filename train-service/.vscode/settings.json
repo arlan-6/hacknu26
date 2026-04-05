@@ -1,0 +1,8 @@
+{
+  "chat.tools.terminal.autoApprove": {
+    "/^Set-Location \"c:\\\\Users\\\\arlan\\\\Documents\\\\Projects\\\\hacknu26\\\\train-service\\\\backend\"; uv run ruff check app --fix$/": {
+      "approve": true,
+      "matchCommandLine": true
+    }
+  }
+}
